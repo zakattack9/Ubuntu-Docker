@@ -21,14 +21,14 @@ RUN apt-get install -y \
     grep \
     gzip \
     # networking packages
+    curl \
+    whois \
     nmap \
     iproute2 \
     iputils-tracepath \
     iputils-ping \
-    net-tools \
     dnsutils \
     arping \
-    curl \
     tcpdump 
 
 # unminimize linux system to allow for use of man
