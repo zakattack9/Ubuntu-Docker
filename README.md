@@ -29,7 +29,7 @@ Docker image that can be used as an Ubuntu 20.04 pseudoterminal environment with
 # pull down custom Ubuntu image
 $ docker pull zakattack9/ubuntu-dev:latest
 
-# re-tag pulled down image without :latest
+# re-tag pulled down image without zakattack9/ prefix
 $ docker tag zakattack9/ubuntu-dev:latest ubuntu-dev
 
 # ...navigate to directory to mount...
@@ -45,7 +45,7 @@ $ docker build -t ubuntu-dev .
 ```
 
 ### Additional Notes
-- **For Windows** makes sure that your *C* drive is selected under *Resources > File Sharing* in the Docker Desktop settings
+- **For Windows** makes sure that your C drive is selected under *Resources > File Sharing* in the Docker Desktop settings
 - All files and folders in the `docker run` execution directory are copied under a `/ubuntu` folder in the Docker container; the `-w` option will automatically navigate to this directory during the container's startup
 - The `docker run` command above creates a container that will bind mount the current directory that it's executed in; this means any file changes in the current directory or in the Docker container's `/ubuntu` directory will be directly reflected on both ends allowing for a live compilation and testing environment
 - With the `--rm` option, typing `exit` will exit the container's bash shell and automatically delete the container
