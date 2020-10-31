@@ -1,4 +1,4 @@
-## [CSE340 Testing Image](https://hub.docker.com/repository/docker/zakattack9/ubuntu-dev)
+## [Ubuntu Development Environment](https://hub.docker.com/repository/docker/zakattack9/ubuntu-dev)
 Docker image that can be used as an Ubuntu 20.04 pseudoterminal environment without the need for a VM
 
 ### Prerequisites
