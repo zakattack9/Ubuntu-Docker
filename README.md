@@ -8,7 +8,7 @@ Docker image that can be used as an Ubuntu 20.04 pseudoterminal environment with
 - `Ubuntu 20.04`
 - `man-db` and `manpages-dev`
 - `most` (set as default pager)
-- `build-essential` (includes g++, gcc, make)
+- `build-essential` (g++, gcc, make)
 - `gdb`
 - `vim` and `nano`
 - `grep`
