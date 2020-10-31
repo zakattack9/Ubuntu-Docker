@@ -7,20 +7,20 @@ Docker image that can be used as an Ubuntu 20.04 pseudoterminal environment with
 ### Packages included in this image
 - `Ubuntu 20.04`
 - `man-db` and `manpages-dev`
-- `most` *(set as default pager)*
-- `build-essential` *(includes g++, gcc, make)*
+- `most` (set as default pager)
+- `build-essential` (includes g++, gcc, make)
 - `gdb`
 - `vim` and `nano`
 - `grep`
 - `gzip`
-- `openssh-server` *(ssh)*
+- `openssh-server` (ssh)
 - `curl`
 - `whois`
 - `nmap`
-- `iproute2` *(ip)*
-- `iputils-tracepath` *(tracepath)*
-- `iputils-ping` *(ping)*
-- `dnsutils` *(dig, nslookup)*
+- `iproute2` (ip)
+- `iputils-tracepath` (tracepath)
+- `iputils-ping` (ping)
+- `dnsutils` (dig, nslookup)
 - `arping`
 - `tcpdump`
 
