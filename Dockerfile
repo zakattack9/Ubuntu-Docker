@@ -8,11 +8,16 @@ ARG DEBIAN_FRONTEND=noninteractive
 
 # install packages
 RUN apt-get install -y \
+    # man packages
+    man-db \
+    manpages-dev \
+    most \
+    # dev packages
     build-essential \
     gdb \
-    manpages-dev \
     openssh-server \
     nano \
+    vim \
     grep \
     gzip \
     # networking packages
@@ -24,4 +29,11 @@ RUN apt-get install -y \
     dnsutils \
     arping \
     curl \
-    tcpdump \
+    tcpdump 
+
+# unminimize linux system to allow for use of man
+# running this increases image size...
+RUN yes | unminimize
+
+# set pager to use most (useful for man pages)
+ENV PAGER=most
