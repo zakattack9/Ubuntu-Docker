@@ -1,10 +1,10 @@
-## [CSE340 Testing Image](https://hub.docker.com/repository/docker/zakattack9/cse340/general)
+## [CSE340 Testing Image](https://hub.docker.com/repository/docker/zakattack9/ubuntu-dev)
 Docker image that can be used as an Ubuntu 20.04 pseudoterminal environment without the need for a VM
 
 ### Prerequisites
 - [Docker Desktop](https://docs.docker.com/get-docker/)
 
-### What's included in this image
+### Packages included in this image
 - `Ubuntu 20.04`
 - `man-db` and `manpages-dev`
 - `most` *(set as default pager)*
