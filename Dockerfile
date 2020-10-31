@@ -35,5 +35,10 @@ RUN apt-get install -y \
 # running this increases image size...
 RUN yes | unminimize
 
+# set bash prompt format to "container-id base-working-directory $"
+RUN echo "export PS1='\[\e[34m\]\h \[\e[1;36m\]\W \[\e[1;33m\]$ \[\e[0m\]'" >> ~/.bashrc
+# alternative color scheme 
+# RUN echo "export PS1='\[\e[32m\]\h \[\e[1;36m\]\W \[\e[1;33m\]$ \[\e[0m\]'" >> ~/.bashrc
+
 # set pager to use most (useful for man pages)
 ENV PAGER=most
