@@ -32,7 +32,7 @@ $ docker pull zakattack9/ubuntu-dev:latest
 # re-tag pulled down image without zakattack9/ prefix
 $ docker tag zakattack9/ubuntu-dev:latest ubuntu-dev
 
-# ...navigate to directory to mount...
+# ...navigate into the directory to mount...
 
 # bind mount current directory and create container with a bash shell
 $ docker run --rm -it -v "`pwd`:/root/ubuntu" -w "/root/ubuntu" ubuntu-dev
